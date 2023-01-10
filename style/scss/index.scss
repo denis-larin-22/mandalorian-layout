@@ -1,0 +1,82 @@
+@import './reset';
+@import url('https://fonts.cdnfonts.com/css/sf-distant-galaxy');
+//colors 
+$red: rgba(119, 15, 15, 1);
+//mixins
+@mixin font-setting ($w, $s, $l) {
+    font-weight: $w;
+    font-size: $s;
+    line-height: $l;
+}
+
+* {
+    text-decoration: none;
+    color: $red;
+}
+
+body {
+    min-height: 100vh;
+    background-image: url('../../assets/Background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'SF Distant Galaxy', sans-serif;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 38px;
+    gap: 40px 0;
+    &__menu {
+        @include font-setting(400, 28px, 23px);
+        display: flex;
+        gap: 0 80px;
+    }
+    &__item {
+        transition: 0.1s ease;
+    }
+    &__item:hover {
+        border-bottom: 2px solid $red;
+    }
+}
+
+.logo {
+    margin: 202px 0 106px;
+    text-align: center;
+}
+
+.bar {
+    max-width: 1564px;
+    margin: 0 auto;
+}
+
+.item {
+    max-width: 650px;
+    padding: 50px 0 33px;
+    background: url(.png), radial-gradient(90.16% 143.01% at 15.32% 21.04%, rgba(165, 239, 255, 0.2) 0%, rgba(110, 191, 244, 0.0447917) 77.08%, rgba(70, 144, 213, 0) 100%);
+    background-blend-mode: overlay, normal;
+    backdrop-filter: blur(40px);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    &__h3 {
+        color: rgba(254, 254, 254, 1);
+        @include font-setting(400, 20px, 17px);
+        letter-spacing: 2px;
+        align-self: flex-start;
+    }
+    &__h2 {
+        color: rgba(254, 254, 254, 1);
+        @include font-setting(400, 28px, 23px);
+        letter-spacing: 2px;
+    }
+}

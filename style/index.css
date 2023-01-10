@@ -1,0 +1,132 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.cdnfonts.com/css/sf-distant-galaxy");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  text-decoration: none;
+  color: rgb(119, 15, 15);
+}
+
+body {
+  min-height: 100vh;
+  background-image: url("../../assets/Background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "SF Distant Galaxy", sans-serif;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 38px;
+  gap: 40px 0;
+}
+.header__menu {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 23px;
+  display: flex;
+  gap: 0 80px;
+}
+.header__item {
+  transition: 0.1s ease;
+}
+.header__item:hover {
+  border-bottom: 2px solid rgb(119, 15, 15);
+}
+
+.logo {
+  margin: 202px 0 106px;
+  text-align: center;
+}
+
+.bar {
+  max-width: 1564px;
+  margin: 0 auto;
+}
+
+.item {
+  max-width: 650px;
+  padding: 50px 0 33px;
+  background: url(.png), radial-gradient(90.16% 143.01% at 15.32% 21.04%, rgba(165, 239, 255, 0.2) 0%, rgba(110, 191, 244, 0.0447917) 77.08%, rgba(70, 144, 213, 0) 100%);
+  background-blend-mode: overlay, normal;
+  -webkit-backdrop-filter: blur(40px);
+          backdrop-filter: blur(40px);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+.item__content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.item__h3 {
+  color: rgb(254, 254, 254);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 17px;
+  letter-spacing: 2px;
+  align-self: flex-start;
+}
+.item__h2 {
+  color: rgb(254, 254, 254);
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 23px;
+  letter-spacing: 2px;
+}/*# sourceMappingURL=index.css.map */
